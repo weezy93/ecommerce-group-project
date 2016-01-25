@@ -1,0 +1,113 @@
+Id,Title,Labels,Iteration,Iteration Start,Iteration End,Type,Estimate,Current State,Created at,Accepted at,Deadline,Requested By,Description,URL,Owned By,Comment,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status
+2249268,Checkout Page,checkout page,,,,epic,,,"Dec 27, 2015",,,,,https://www.pivotaltracker.com/epic/show/2249268,,,,,,,,,,,,,,,,
+2249264,Products Page,products page,,,,epic,,,"Dec 27, 2015",,,,,https://www.pivotaltracker.com/epic/show/2249264,,,,,,,,,,,,,,,,
+2249262,Homepage,homepage,,,,epic,,,"Dec 27, 2015",,,,,https://www.pivotaltracker.com/epic/show/2249262,," (Wes Reid - Dec 27, 2015)",,,,,,,,,,,,,,
+110896426,"User should see a ""receipt"" of what they ordered",checkout page,,,,feature,,unscheduled,"Dec 31, 2015",,,Wes Reid,"As a user, before I purchase I want to see a receipt of what I am ordering showing the final price and the items I've chosen.
+
+__Acceptance Criteria:__
+* Display on the page a list of items and total cost -- this information can simply be static",https://www.pivotaltracker.com/story/show/110896426,,,Display on the page a list of items and total cost -- this information can simply be static,not completed
+110896446,User should be able to enter in their shipping information,checkout page,,,,feature,,unscheduled,"Dec 31, 2015",,,Wes Reid,"As a user, I want to be able to enter in my shipping information into a form on the `/checkout.html` page. The form should collect information relevant for a US delivery address and validate those fields that are required, correctly. Validation should happen as the user enters information into the fields.
+
+_Note: This story has the same requirements as #110896448._
+
+__Acceptance Criteria:__
+* A clearly labeled shipping form with the following fields:
+  * first name (required, validates for presence)
+  * last name (required, validates for presence)
+  * company name
+  * Address (two input fields, first line is required, validates for presence)
+  * City (required, validates for presence)
+  * State (required, select box with initial selection as ""Select a State,"" validates for any selected state)
+  * Zip Code (required, validates for only numbers and that there are between 5 and 9 numbers)",https://www.pivotaltracker.com/story/show/110896446,,,"Form should include ""First Name"" (required, validates for presence)",not completed,"Form should include ""Last Name"" (required, validates for presence)",not completed,Form should include Company Name,not completed,"Form should include Address (two input fields, first line is required, validates for presence)",not completed,"Form should include City (required, validates for presence)",not completed,"Form should include State (required, select box with initial selection as ""Select a State,"" validates for any selected state)",not completed,"Form should include Zip Code (required, validates for only numbers and that there are between 5 and 9 numbers)",not completed
+110896448,User should be able to enter in their billing information,checkout page,,,,feature,,unscheduled,"Dec 31, 2015",,,Wes Reid,"As a user, I want to be able to enter in my billing information into a form on the `/checkout.html` page. The form should collect information relevant for a valid US address and validate those fields that are required, correctly. Validation should happen as the user enters information into the fields.
+
+_Note: This story has the same requirements as #110896446._
+
+__Acceptance Criteria:__
+* A clearly labeled shipping form with the following fields:
+  * first name (required, validates for presence)
+  * last name (required, validates for presence)
+  * company name
+  * Address (two input fields, first line is required, validates for presence)
+  * City (required, validates for presence)
+  * State (required, select box with initial selection as ""Select a State,"" validates for any selected state)
+  * Zip Code (required, validates for only numbers and that there are between 5 and 9 numbers)",https://www.pivotaltracker.com/story/show/110896448,,,"Form should include ""First Name"" (required, validates for presence)",not completed,"Form should include ""Last Name"" (required, validates for presence)",not completed,Form should include Company Name,not completed,"Form should include Address (two input fields, first line is required, validates for presence)",not completed,"Form should include City (required, validates for presence)",not completed,"Form should include State (required, select box with initial selection as ""Select a State,"" validates for any selected state)",not completed,"Form should include Zip Code (required, validates for only numbers and that there are between 5 and 9 numbers)",not completed
+110901242,User should be able to copy shipping information directly to billing information ,checkout page,,,,feature,,unscheduled,"Jan 1, 2016",,,Wes Reid,"As a user, I should be able to check a checkbox to copy all of my information from the shipping form into the billing form.
+
+__Acceptance Criteria:__
+* A checkbox is on the page which, when clicked, copies information form Shipping to Billing
+* When the box is checked, all information is copied exactly (i.e. if ""Company"" is filled in on the Billing form but ""Company"" is empty on the Shipping, it should be changed to empty, reflecting Shipping)
+* When the box is checked, all fields (both Shipping and Billing) are validated
+",https://www.pivotaltracker.com/story/show/110901242,,,"A checkbox is on the page which, when clicked, copies information form Shipping to Billing",not completed,"When the box is checked, all information is copied exactly (i.e. if ""Company"" is filled in on the Billing form but ""Company"" is empty on the Shipping, it should be changed to empty, reflecting Shipping)",not completed,"When the box is checked, all fields (both Shipping and Billing) are validated",not completed
+110901890,"User should be able to ""purchase"" their products with a credit card",checkout page,,,,feature,,unscheduled,"Jan 1, 2016",,,Wes Reid,"As a user, I should be able to enter a credit card number and relevant information, have the card validated, and be able to ""purchase"" the products.
+
+_Note: Basic validation should happen as the user enters information into the fields. Additional validation should come from [stripe.js](https://stripe.com/docs/stripe.js)._
+
+__Acceptance Criteria:__
+* A clearly labeled credit card form with the following fields:
+  * credit card number (required, validates for at least 16 numbers)
+  * credit card month/year (required, validates for presence)
+  * CVC (required, validates for presence)
+* A ""Purchase"" button that, when clicked:
+  * Validates all fields on the page (Shipping, Billing, and Credit Card)
+  * If there are no obvious errors, sends credit card information to Stripe
+  * If Stripe returns a success response, clears all fields and shows some sort of success message.
+  * If Stripe returns an error response, the error is displayed on the page",https://www.pivotaltracker.com/story/show/110901890,,,"Form should include credit card number (required, validates for at least 16 numbers)",not completed,"Form should include credit card month/year (required, validates for presence)",not completed,"Form should include CVC (required, validates for presence)",not completed,Purchase button validates all fields on the page,not completed,Purchase button sends credit card information to Stripe if no errors on the page are present,not completed,"On a successful Stripe response, all fields are cleared and a success message shows",not completed,"On an unsuccessful Stripe response, the error returned from Stripe is displayed",not completed
+110896398,User should see a list of products,products page,,,,feature,,unscheduled,"Dec 31, 2015",,,Wes Reid,"As a user, I should be able to see a list of products on the `/products.html` page that include some relevant information (e.g. name, price, rating, size, etc).
+
+__Acceptance Criteria:__
+* At least 10 products are listed on the `/products.html` page. They can be displayed however you like",https://www.pivotaltracker.com/story/show/110896398,,,At least 10 products are listed on the `/products.html` page. They can be displayed however you like,not completed
+110896412,User can sort products by two or more categories,products page,,,,feature,,unscheduled,"Dec 31, 2015",,,Wes Reid,"As a user, I want to be able to sort among the available products by two different categories. For example, users should be able to sort by size and color.
+
+_Note: You do not need to sort at the same time (i.e. ""medium"" and ""orange"")._
+
+__Acceptance Criteria:__
+* Products can be sorted separately by two or more categories. Unselected products should disappear from the page",https://www.pivotaltracker.com/story/show/110896412,,,Products can be sorted separately by two or more categories. Unselected products should disappear from the page,not completed
+110735038,User should navigate to multiple pages via the navigation bar,homepage,,,,feature,,unscheduled,"Dec 27, 2015",,,Wes Reid,"As a user, I want to be able to get to multiple pages and sub-pages using just the navigation bar.
+
+__Acceptance Criteria:__
+* Create a Nav bar with at least three links
+* Add a roll-over effect for links (when the mouse rolls over the link, something changes)
+* At least one dropdown menu that shows a sub-menu for one of the top-level links
+* A logo or title that links to the homepage",https://www.pivotaltracker.com/story/show/110735038,,,Create a Nav bar with at least three links,not completed,"Add a roll-over effect for links (when the mouse rolls over the link, something changes)",not completed,At least one dropdown menu that shows a sub-menu for one of the top-level links,not completed,A logo or title that links to the homepage,not completed
+110735046,User should see how many items are in the shopping cart on the navigation bar,homepage,,,,feature,,unscheduled,"Dec 27, 2015",,,Wes Reid,"As a user, I want to know how many items are currently in my shopping cart at any given time on the navigation bar.
+
+__Acceptance Criteria:__
+* Somewhere on the navigation bar the number of items are listed that are in a shopping cart (for now, this can just be a static number)",https://www.pivotaltracker.com/story/show/110735046,,,"Somewhere on the navigation bar the number of items are listed that are in a shopping cart (for now, this can just be a static number)",not completed
+110735654,"User has ""promotional images"" automatically rotated in front of them and/or should be able to progress through the images on their own",homepage,,,,feature,,unscheduled,"Dec 27, 2015",,,Wes Reid,"As a user, I want to be able to have ""promotional images"" show to me in a carousel format. If I choose to move forward or back on an image, I should be able to do so as well.
+
+__Acceptance Criteria:__
+* At least three images are rotated at regular intervals on the main page
+* A forward and back button allows the user to move forward or backwards an image
+* If you move forward on the last image, it should go the first; if you move backwards on the first image, you should go to the last
+* If you move forward on an image, the timer should reset (i.e. if the timer is set to rotate every five seconds and a user clicks on the fourth second, the image should change and wait another five seconds)",https://www.pivotaltracker.com/story/show/110735654,,,At least three images are rotated at regular intervals on the main page,not completed,A forward and back button allows the user to move forward or backwards an image,not completed,"If you move forward on the last image, it should go the first; if you move backwards on the first image, you should go to the last",not completed,"If you move forward on an image, the timer should reset (i.e. if the timer is set to rotate every five seconds and a user clicks on the fourth second, the image should change and wait another five seconds)",not completed
+110735700,Users should see some featured products on the homepage ,homepage,,,,feature,,unscheduled,"Dec 27, 2015",,,Wes Reid,"As a user, I want to see some featured products on the homepage with information about each and a way to ""add to cart.""
+
+__Acceptance Criteria:__
+* At least three products in three columns should be shown on the homepage
+* Each should have a product image, name, rating, and price
+* When a user rolls over the image, something should pop up with an ""add to cart"" link (the link does not need to actually do anything, for this example)",https://www.pivotaltracker.com/story/show/110735700,,,At least three products in three columns should be shown on the homepage,not completed,"Each should have a product image, name, rating, and price",not completed,"When a user rolls over the image, something should pop up with an ""add to cart"" link (the link does not need to actually do anything, for this example)",not completed
+110735754,"Users should ""signup"" to receive newsletters on more products",homepage,,,,feature,,unscheduled,"Dec 27, 2015",,,Wes Reid,"As a user, I would like to be able to enter my email in order to receive promotional emails.
+
+__Acceptance Criteria:__
+* A text box that validates the entered email is visible somewhere on the main page.
+  * _The following emails should be incorrect:_
+    * example
+    * example@
+    * example@example
+    * @example
+    * example@example.
+    * e/x-a!m&p#l()e@example.com
+  * _The following emails should be correct:_
+    * example@example.com
+    * example+10@example.co
+    * example.example@example.republican
+* When the submit button is clicked and the email is _invalid_, the user should receive some sort of indication that the email is wrong
+* When the submit button is clicked and the email is _valid_, the input should be cleared and the user should receive some sort of notification",https://www.pivotaltracker.com/story/show/110735754,,,A text box that validates the entered email is visible somewhere on the main page. (see above for examples),not completed,"When the submit button is clicked and the email is _invalid_, the user should receive some sort of indication that the email is wrong",not completed,"When the submit button is clicked and the email is _valid_, the input should be cleared and the user should receive some sort of notification",not completed
+110735816,Users should see a map and various links in the footer of the page,homepage,,,,feature,,unscheduled,"Dec 27, 2015",,,Wes Reid,"As a user, I want to find any additional information about the site in the footer including a map to the location of the ""store"" and some featured posts with images.
+
+__Accepted Criteria:__
+* The footer should contain four+ columns
+* At least one column contains a map
+* At least one column contains a list of posts with images next to them
+* At least two columns contain links",https://www.pivotaltracker.com/story/show/110735816,,,The footer should contain four columns (or more),not completed,At least one column contains a map,not completed,At least one column contains a list of posts with images next to them,not completed,At least two columns contain links,not completed
