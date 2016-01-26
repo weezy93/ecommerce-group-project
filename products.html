@@ -7,8 +7,36 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css" rel="stylesheet" integrity="sha256-purz3wKA8uL+3JryAuYkSkIZL1CHBSzJ2UwvxAOmYmM= sha512-ge9yLSNqO8D9q8z+kLuUnluXxJTVKdLCwzYBS9rZ3eDW7oJK+mLjRsQa4995TpGINC4GWYi4S2ocDssunh1q3g==" crossorigin="anonymous">
 </head>
 <body>
+	 <!-- nav bar starts here -->
+
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="collapse navbar-collapse">
+
+      <ul class="nav navbar-nav">
+        <li id="home-btn"><a href="index.html"><em>Plush Palace</em></a></li>
+        <li id="prdct-btn"><a href="products.html"><small>Plush Products</small></a></li>
+      </ul>
+      <div class="navbar-text pull-right"><small><em>checkout</em></small></div>
+      <button type="button" id="cart-btn" class="btn btn-default navbar-btn pull-right"><a href="checkout.html">Cart (0)</a></button>
+      <!-- <div class="col-sm-3 pull-middle">
+      <form class="navbar-form" role="search">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search-term" id="search-term">
+        <div class="input-group-btn">
+          <button id="search-btn" class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+        </div>
+      </div>
+      </form>
+      </div> -->
+    </div>
+  </div>
+<!--Nav Bar ENDS HERE!-->
 	<div class="container"> <!-- doesn't fill width-->
-			<div class="row"><h2>Products</h2></div>
+
+		<div class="row"><h2>Products</h2></div>
+		<div class="row">
+			<div class="col-md-3"><h2><br><br>Products</h2></div>
+		</div>
 		<div class="row"> <!-- product sort by -->
 			<div class="col-xs-3 col-sm-3 col-md-3">Sort by: </div>
 			<div class="col-xs-3 col-sm-3  col-md-3"><a href="#">Category 1</a></div>
@@ -52,8 +80,36 @@
 				<div class="row"><p>Sit in box sleep on dog bed, force dog to sleep on floor so swat at dog have secret plans jump around on couch, meow constantly until given food, . Immediately regret falling into bathtub meowwww and loves cheeseburgers paw at beetle and eat it before it gets away poop in litter box, scratch the walls. Present belly, scratch hand when stroked use lap as chair. All of a sudden cat goes crazy when in doubt, wash hate dog.</p></div>
 			</div>
 		</div>
-	</div>
-</div> <!-- container class div-->
+</div> <!-- container class closing div-->
+  <!--Footer starts here -->
+<div class="navbar navbar-default navbar-scale-bottom" role="navigation" id="footer">
+  <div class="row">
+    <div id="map" class="footer-col col-md-3 pull-left col-md-offset-1">
+      <p><em>Visit us...</em></p>
+      <img src="http://www.advancedcustomfields.com/wp-content/uploads/2013/11/acf-google-maps-field-2.png" style="height:200px;width:300px">
+    </div>
+    <div id="sale" class="footer-col col-sm-2 pull-middle">
+      <h3><em>On Sale...</em></h3>
+      <p><a href="#">item</a></p>
+      <p><a href="#">item</a></p>
+      <p><a href="#">item</a></p>
+    </div>
+    <div id="links" class="footer-col col-sm-2 pull-middle">
+      <h3><em>Where do you want to go?</em></h3>
+      <p><a href="index.html">Plush Palace Home</a></p>
+      <p><a href="products.html">Products</a></p>
+      <p><a href="checkout.html">Checkout</a></p>
+    </div>
+    <div id="contact" class="footer-col col-sm-2 col-sm-offset-1">
+      <h3><em>Contact Us</em></h3>
+      <p>1 (800) LUVVBUG</p>
+      <p>plushPalace@plushy.com</p>
+      <p>227 Collins Street<br>
+      Melbourne, VIC 3000, Australia</p>
+    </div>
+  </div>
+</div>
+<!--Footer stopes here-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 </body>
 </html>
