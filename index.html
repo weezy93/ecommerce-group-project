@@ -8,12 +8,31 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css" rel="stylesheet" integrity="sha256-purz3wKA8uL+3JryAuYkSkIZL1CHBSzJ2UwvxAOmYmM= sha512-ge9yLSNqO8D9q8z+kLuUnluXxJTVKdLCwzYBS9rZ3eDW7oJK+mLjRsQa4995TpGINC4GWYi4S2ocDssunh1q3g==" crossorigin="anonymous">
 </head>
 <body>
+ <!-- nav bar starts here -->
+
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="collapse navbar-collapse">
+      
+      <ul class="nav navbar-nav">
+        <li id="home-btn"><a href="index.html"><em>Plush Palace</em></a></li>
+        <li id="prdct-btn"><a href="products.html"><small>Plush Products</small></a></li>
+      </ul>
+      <div class="navbar-text pull-right"><small><em>checkout</em></small></div>
+      <button type="button" id="cart-btn" class="btn btn-default navbar-btn pull-right"><a href="checkout.html">Cart (0)</a></button>
+      <div class="col-sm-3 col-md-3 pull-middle">
+      <form class="navbar-form" role="search">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search-term" id="search-term">
+        <div class="input-group-btn">
+          <button id="search-btn" class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+        </div>
+      </div>
+      </form>
+      </div>
+    </div>
+  </div>
+<!--Nav Bar ENDS HERE!-->
   <div class="container">
-    <nav>
-      <br>
-      <br>
-      <br>
-    </nav>
 
     <div id="myCarousel" height="100px" class="carousel slide" data-ride="carousel">
     <!-- Wrapper for carousel slides -->
@@ -69,15 +88,46 @@
       <p style="margin:10px">
         Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
       </p>
-      <form>
-        <input type="text" name="email" placeHolder="Email" style="width:65%;margin:10px">
-        <input type="submit" value="Signup" style="width:30%">
+      <form onSubmit="validate(); return false;" action="#">
+        <input id="emailInput" type="text" name="email" placeHolder="Email" style="width:65%;margin:10px">
+        <input id="emailSubmit" type="submit" value="Signup" style="width:30%">
       </form>
     </div>
 
   </div>
- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!--Footer starts here -->
+<div class="navbar navbar-default navbar-scale-bottom" role="navigation" id="footer">
+  <div class="row">
+    <div id="map" class="footer-col col-sm-2 col-sm-offset-1">
+      <p><em>Visit us...</em></p>
+      <img src="http://www.advancedcustomfields.com/wp-content/uploads/2013/11/acf-google-maps-field-2.png" style="height:200px;width:300px">
+    </div>
+    <div id="contact" class="footer-col col-sm-3 pull-right">
+      <h3>Contact Us</h3>
+      <p>1 (800) LUVVBUG</p>
+      <p>plushPalace@plushy.com</p>
+      <p>227 Collins Street<br>
+      Melbourne, VIC 3000, Australia</p>
+    </div>
+    <div id="links" class="footer-col col-sm-3 pull-right">
+      <h3>Where do you want to go?</h3>
+      <p><a href="index.html">Plush Palace Home</a></p>
+      <p><a href="products.html">Products</a></p>
+      <p><a href="checkout.html">Checkout</a></p>
+    </div>
+    <div id="sale" class="footer-col col-sm-2 pull-right">
+      <h3><em>On Sale...</em></h3>
+      <p><a href="#">item</a></p>
+      <p><a href="#">item</a></p>
+      <p><a href="#">item</a></p>
+    </div>
+  </div>
+</div>
+<!--Footer stopes here-->
+
+
  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="emailValidate.js"></script>
 </body>
 </html>
