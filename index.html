@@ -1,14 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Unit 1 Project - eCommerce Site</title>
+  <title>Welcome to Plush Palace!</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css" rel="stylesheet" integrity="sha256-purz3wKA8uL+3JryAuYkSkIZL1CHBSzJ2UwvxAOmYmM= sha512-ge9yLSNqO8D9q8z+kLuUnluXxJTVKdLCwzYBS9rZ3eDW7oJK+mLjRsQa4995TpGINC4GWYi4S2ocDssunh1q3g==" crossorigin="anonymous">
 </head>
 <body>
-  <!-- your code here! -->
+  <div class="container">
+    <nav>
+      <br>
+      <br>
+      <br>
+    </nav>
+
+    <div id="myCarousel" height="100px" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for carousel slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/colorbears.jpg" class="col-md-12" height="100px" width="100%">
+        </div>
+        <div class="item">
+          <img src="images/oversized.jpg" class="col-md-12" height="100px" width="100%">
+        </div>
+      </div>
+
+    <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+
+    <h2 align="center">Products</h2>
+
+    <div>
+        <figure class="col-l-3; col-md-4; col-sm-4; col-xs-4 text-center">
+          <img src="images/product1.jpg" align="center" style="height:200px; width:200px">
+          <figcaption>Product 1</figcaption>
+          <figcaption>$ 0.00</figcaption>
+          <figcaption>★★★★★</figcaption>
+        </figure>
+
+        <figure class="col-l-3; col-md-4; col-sm-4; col-xs-4 text-center">
+          <img src="images/product2.jpg" style="height:200px; width:200px">
+          <figcaption>Product 2</figcaption>
+          <figcaption>$0.00</figcaption>
+          <figcaption>★★★★★</figcaption>
+        </figure>
+
+        <figure class="col-l-3; col-md-4; col-xs-4 text-center">
+          <img src="images/product3.jpg" style="height:200px; width:200px">
+          <figcaption>Product 3</figcaption>
+          <figcaption>$0.00</figcaption>
+          <figcaption>★★★★★</figcaption>
+        </figure>
+    </div>
+
+
+    <div class="bg-primary" style="padding-top:10px;padding-bottom:10px;margin-top:25px;display:inline-block">
+      <h2 align="center">Signup Today!</h2>
+      <p style="margin:10px">
+        Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+      </p>
+      <form>
+        <input type="text" name="email" placeHolder="Email" style="width:65%;margin:10px">
+        <input type="submit" value="Signup" style="width:30%">
+      </form>
+    </div>
+
+  </div>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+ <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
