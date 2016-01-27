@@ -1,6 +1,5 @@
 
 $(document).ready(function (){
-	console.log("sanity");
 
 	$('#emailSubmit').on('click', function(){
 
