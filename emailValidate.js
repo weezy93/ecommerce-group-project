@@ -1,6 +1,5 @@
 
 $(document).ready(function (){
-	console.log("sanity");
 
 	$('#emailSubmit').on('click', function(){
 
@@ -12,9 +11,9 @@ $(document).ready(function (){
 		function validate(){
 			var email = $('#emailInput').val();
  			if (validateEmail(email)) {
-    			alert("Thank you! A Conformation email has been sent to" + email);
+    			alert("Thank you! A Conformation email has been sent to " + email);
   			} else {
-    			alert(email + "is not valid :(");
+    			alert(email + " is not valid :(");
   			}
   			return false;
 		}
