@@ -34,12 +34,12 @@
 
       <ul class="nav navbar-nav navbar-right">
           <a href="checkout.html"><button id="cart" class="btn btn-default pull-right" type="button"><i class="glyphicon glyphicon-shopping-cart"></i><span id="itemAmount">( 0 )</span></button></a>
-      </ul> 
+      </ul>
     </div>
   </div>
 </nav><!--header goes here-->
 <!-- HEAD -->
-  
+
 <!-- ======= -->
 <br><br>
   <div class="container">
@@ -56,7 +56,7 @@
         </tr>
       </thead>
       <tbody id="receipt">
-        
+
       </tbody>
       <tbody>
         <tr class="active">
@@ -180,25 +180,19 @@
         <div class="form-group">
           <label for="creditCard" class="col-lg-2 control-label">Credit Card Number:</label>
           <div class="col-lg-6">
-            <input type="text" class="form-control" id="creditCard">
+            <input type="text" class="form-control card-number" id="creditCard" placeholder='0123 4567 8901 0123'>
           </div>
         </div>
         <div class="form-group">
-          <label for="expiry" class="col-lg-2 control-label">Expiration Month:</label>
+          <label for="expiry" class="col-lg-2 control-label">Expiration Month/Year:</label>
           <div class="col-lg-2">
-            <input type="text" class="form-control" id="exp-month">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="expiry" class="col-lg-2 control-label">Expiration Year:</label>
-          <div class="col-lg-2">
-            <input type="text" class="form-control" id="exp-year">
+            <input class=' form-control card-expiry' placeholder="12/2018">
           </div>
         </div>
         <div class="form-group">
           <label for="cvc" class="col-lg-2 control-label">CVC:</label>
           <div class="col-lg-2">
-            <input type="text" class="form-control" id="cvc">
+            <input type="text" class=" card-cvc form-control" id="cvc" placeholder="123">
           </div>
         </div>
       <div class="form-group">
@@ -246,5 +240,8 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script type="text/javascript" src="cart.js"></script>
 <script type="text/javascript" src="ship.js"></script>
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <script type="text/javascript" src='https://checkout.stripe.com/checkout.js'></script>
+<script type="text/javascript" src="checkoutVal.js"></script>
 </body>
 </html>
