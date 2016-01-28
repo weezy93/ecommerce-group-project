@@ -9,7 +9,7 @@
 <body>
  <!-- nav bar starts here -->
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -31,16 +31,17 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
+
       <ul class="nav navbar-nav navbar-right">
-          <a href="checkout.html"><button id="cart" class="btn btn-default" type="button"><i class="glyphicon glyphicon-shopping-cart pull-right"></i>( 0 )</button></a>
+          <a href="checkout.html"><button id="cart" class="btn btn-default pull-right" type="button"><i class="glyphicon glyphicon-shopping-cart"></i><span id="itemAmount">( 0 )</span></button></a>
       </ul> 
     </div>
   </div>
-</nav>
-<!--header goes here-->
+</nav><!--header goes here-->
 <!-- HEAD -->
   
 <!-- ======= -->
+<br><br>
   <div class="container">
     <h1>Checkout</h1>
 <!-- >>>>>>> upstream/master -->
@@ -65,61 +66,61 @@
         </tr>
       </tbody>
     </table>
-    <form class="form-horizontal">
+    <form id="shipform" class="form-horizontal">
       <fieldset>
         <legend>Shipping</legend>
         <div class="form-group">
           <label for="fullName" class="col-lg-2 control-label">Full Name:</label>
           <div class="col-lg-6">
-            <input type="text" class="form-control" id="fullName">
+            <input id="shipName" type="text" class="form-control" id="fullName">
           </div>
         </div>
         <div class="form-group">
           <label for="addressLine1" class="col-lg-2 control-label">Address line 1:</label>
           <div class="col-lg-6">
-            <input type="text" class="form-control" id="addressLine1" placeholder="Street address, P.O. box, company name, c/o">
+            <input id="shipLine1" type="text" class="form-control" id="addressLine1" placeholder="Street address, P.O. box, company name, c/o">
           </div>
         </div>
         <div class="form-group">
           <label for="addressLine2" class="col-lg-2 control-label">Address line 2:</label>
           <div class="col-lg-6">
-            <input type="text" class="form-control" id="addressLine2" placeholder="Apartment, suite, unit, building, floor, etc.">
+            <input id="shipLine2" type="text" class="form-control" id="addressLine2" placeholder="Apartment, suite, unit, building, floor, etc.">
           </div>
         </div>
         <div class="form-group">
           <label for="city" class="col-lg-2 control-label">City:</label>
           <div class="col-lg-6">
-            <input type="text" class="form-control" id="city">
+            <input id="shipCity" type="text" class="form-control" id="city">
           </div>
         </div>
         <div class="form-group">
           <label for="state" class="col-lg-2 control-label">State/Province/Region:</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" id="state">
+            <input id="shipState" type="text" class="form-control" id="state">
           </div>
         </div>
         <div class="form-group">
           <label for="zip" class="col-lg-2 control-label">ZIP:</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" id="zip">
+            <input id="shipZip" type="text" class="form-control" id="zip">
           </div>
         </div>
         <div class="form-group">
           <label for="country" class="col-lg-2 control-label">Country:</label>
           <div class="col-lg-6">
-            <input type="text" class="form-control" id="country">
+            <input id="shipCountry" type="text" class="form-control" id="country">
           </div>
         </div>
         <div class="form-group">
           <label for="phone" class="col-lg-2 control-label">Phone Number:</label>
           <div class="col-lg-6">
-            <input type="text" class="form-control" id="phone">
+            <input id="shipPhone" type="text" class="form-control" id="phone">
           </div>
         </div>
         <br>
         <div class="checkbox">
           <label>
-            <input type="checkbox">Shipping same as billing?
+            <input id="checkbox" type="checkbox">Shipping same as billing?
           </label>
         </div>
         <br>
@@ -128,53 +129,54 @@
         <div class="form-group">
           <label for="fullName" class="col-lg-2 control-label">Full Name:</label>
           <div class="col-lg-6">
-            <input type="text" class="form-control" id="fullName">
+            <input id="billName" type="text" class="form-control" id="fullName">
           </div>
         </div>
         <div class="form-group">
           <label for="addressLine1" class="col-lg-2 control-label">Address line 1:</label>
           <div class="col-lg-6">
-            <input type="text" class="form-control" id="addressLine1" placeholder="Street address, P.O. box, company name, c/o">
+            <input id="billLine1" type="text" class="form-control" id="addressLine1" placeholder="Street address, P.O. box, company name, c/o">
           </div>
         </div>
         <div class="form-group">
           <label for="addressLine2" class="col-lg-2 control-label">Address line 2:</label>
           <div class="col-lg-6">
-            <input type="text" class="form-control" id="addressLine2" placeholder="Apartment, suite, unit, building, floor, etc.">
+            <input id="billLine2" type="text" class="form-control" id="addressLine2" placeholder="Apartment, suite, unit, building, floor, etc.">
           </div>
         </div>
         <div class="form-group">
           <label for="city" class="col-lg-2 control-label">City:</label>
           <div class="col-lg-6">
-            <input type="text" class="form-control" id="city">
+            <input id="billCity" type="text" class="form-control" id="city">
           </div>
         </div>
         <div class="form-group">
           <label for="state" class="col-lg-2 control-label">State/Province/Region:</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" id="state">
+            <input id="billState" type="text" class="form-control" id="state">
           </div>
         </div>
         <div class="form-group">
           <label for="zip" class="col-lg-2 control-label">ZIP:</label>
           <div class="col-lg-4">
-            <input type="text" class="form-control" id="zip">
+            <input id="billZip" type="text" class="form-control" id="zip">
           </div>
         </div>
         <div class="form-group">
           <label for="country" class="col-lg-2 control-label">Country:</label>
           <div class="col-lg-6">
-            <input type="text" class="form-control" id="country">
+            <input id="billCountry" type="text" class="form-control" id="country">
           </div>
         </div>
         <div class="form-group">
           <label for="phone" class="col-lg-2 control-label">Phone Number:</label>
           <div class="col-lg-6">
-            <input type="text" class="form-control" id="phone">
+            <input id="billPhone" type="text" class="form-control" id="phone">
           </div>
         </div>
         <br>
         <legend>Credit Card Information</legend>
+        <form id="ccInfo">
         <div class="form-group">
           <label for="creditCard" class="col-lg-2 control-label">Credit Card Number:</label>
           <div class="col-lg-6">
@@ -182,9 +184,15 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="expiry" class="col-lg-2 control-label">Expiration:</label>
+          <label for="expiry" class="col-lg-2 control-label">Expiration Month:</label>
           <div class="col-lg-2">
-            <input type="text" class="form-control" id="expiry">
+            <input type="text" class="form-control" id="exp-month">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="expiry" class="col-lg-2 control-label">Expiration Year:</label>
+          <div class="col-lg-2">
+            <input type="text" class="form-control" id="exp-year">
           </div>
         </div>
         <div class="form-group">
@@ -194,11 +202,12 @@
           </div>
         </div>
       <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2">
-        <button type="reset" class="btn btn-default">Cancel</button>
-        <button type="submit" class="btn btn-primary">Purchase</button>
+        <div class="col-lg-10 col-lg-offset-2">
+          <button type="reset" class="btn btn-default">Cancel</button>
+          <button id="buy" type="submit" class="btn btn-primary">Purchase</button>
       </div>
     </div>
+    </form>
       </fieldset>
     </form>
 
@@ -236,5 +245,6 @@
 <!--Footer stopes here-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script type="text/javascript" src="cart.js"></script>
+<script type="text/javascript" src="ship.js"></script>
 </body>
 </html>
