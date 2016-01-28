@@ -35,24 +35,33 @@
 
       <ul class="nav navbar-nav navbar-right">
           <a href="checkout.html"><button id="cart" class="btn btn-default pull-right" type="button"><i class="glyphicon glyphicon-shopping-cart"></i><span id="itemAmount">( 0 )</span></button></a>
-      </ul> 
+      </ul>
     </div>
   </div>
 </nav>
 <!--Nav Bar ENDS HERE!-->
 <br><br>
+
+  <!-- Carousel -->
   <div class="container">
-  <div class="container2">
-    <div id="myCarousel" height="100px" class="carousel slide" data-ride="carousel">
+    <div class="container2">
+      <style>
+      #myCarousel .slider-size {
+        height: 300px;
+        width: 100%;
+      }
+      </style>
+      <div id="myCarousel" height="100px" class="carousel slide" data-ride="carousel">
+
     <!-- Wrapper for carousel slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="cimg" src="images/colorbears.jpg" class="col-md-12" height="100px" width="100%">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active slider-size">
+            <img class="cimg" src="images/colorbears.jpg" class="col-md-12" height="100px" width="100%">
+          </div>
+          <div class="item slider-size">
+            <img class="cimg" src="images/oversized.jpg" class="col-md-12" height="100px" width="100%">
+          </div>
         </div>
-        <div class="item">
-          <img class="cimg" src="images/oversized.jpg" class="col-md-12" height="100px" width="100%">
-        </div>
-      </div>
 
     <!-- Left and right controls -->
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -64,11 +73,12 @@
         <span class="sr-only">Next</span>
       </a>
 
-    </div>
+      </div>
     </div>
 
     <h2 align="center"><a href="products.html">Products</a></h2>
 
+    <!-- Carousel Images -->
     <div>
         <figure class="col-l-3; col-md-4; col-sm-4; col-xs-4 text-center">
           <img src="images/product1.jpg" align="center" style="height:200px; width:200px">
@@ -95,7 +105,7 @@
         </figure>
     </div>
 
-
+    <!-- Email Signup Form -->
     <div class="bg-primary" style="padding-top:10px;padding-bottom:10px;margin-top:25px;display:inline-block">
       <h2 align="center">Signup Today!</h2>
       <p style="margin:10px">
